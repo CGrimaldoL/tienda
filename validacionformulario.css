@@ -1,0 +1,12 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+input {
+    margin-bottom: 10px;
+    display: block;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}

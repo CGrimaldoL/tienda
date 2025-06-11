@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Mesa - Restaurant Di Carlos</title>
+    <!-- Aplicación de estilos mediante hojas de estilo externas (CSS). -->
+    <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+  body {
+
+    background-color: rgb(19, 165, 0);
+    background-image: url(variedades.avif);
+  }
+    </style>
+<body>
+    <header>
+        <h1>Reservar Mesa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <main> -->
+    <main class="container my-5 bg-dark bg-opacity-25 p-5 rounded-4">
+        <section id="reserva-form" aria-label="Formulario de reserva">
+            <h2>Formulario de Reserva</h2>
+            <form id="form-reserva" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre del cliente:</label>
+                    <input type="text" id="nombre" name="nombre" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de la reserva:</label>
+                    <input type="date" id="fecha" name="fecha" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario adicional:</label>
+                    <textarea id="comentario" name="comentario" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="color">Color preferido:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <div class="form-group">
+                    <label for="comensales">Número de comensales:</label>
+                    <input type="number" id="comensales" name="comensales" min="1" max="20" required
+                        aria-required="true">
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos" required aria-required="true">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit" class="btn-reservar">Reservar</button>
+                <div id="mensaje-formulario" role="alert"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Restaurant Di Carlo. Diseñado por Carlos</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

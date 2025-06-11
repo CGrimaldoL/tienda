@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Di Carlo</title>
+    <!-- Aplicación de estilos mediante hojas de estilo externas (CSS). -->
+    <link rel="stylesheet" href="style.css">
+</head>
+ <style>
+  body {
+
+    background-color: rgb(19, 165, 0);
+    background-image: url(variedades.avif);
+  }
+    </style>
+<body>
+    <header>
+        <!-- Título principal identificativo del Restaurante -->
+        <h1 id="principal-title">Restaurante Di Carlo</h1>
+        <h2>La Vera cucina</h2>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menú</a></li>
+                <!-- Enlace de texto "Reservar mesa" que redirija a la página de reservas -->
+                <li><a href="reserva.html">Reservar mesa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner publicitario -->
+    <main class="container  my-5 bg-dark bg-opacity-25 p-5 rounded-4">
+        <section id="banner-section" aria-label="Banner publicitario">
+            <div id="banner-carousel" class="banner-carousel">
+                <img src="paella.jpg" alt="Promoción especial de la semana">
+                <img src="rest_ladrillos.jpg" alt="Nuevos platos en el menú">
+                <img src="sillas.avif" alt="Descuento en postres los viernes">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Restaurante Di Carlo. Diseñado por Carlos</p>
+        <ul>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
